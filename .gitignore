@@ -1,0 +1,29 @@
+# Composer dependencies
+/vendor/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# User uploaded files
+/uploads/*
+!/uploads/.gitkeep
+
+# Local database backups
+*.sql
+*.sql.zip
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
