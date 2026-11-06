@@ -1,0 +1,234 @@
+/* ================================
+   STUDENT WIZARD
+================================ */
+.student-page-heading {
+    width: 82%;
+    max-width: 1150px;
+    margin: 0 auto 20px;
+}
+
+.student-page-heading h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #172b4d;
+}
+
+.student-page-heading p {
+    margin: 5px 0 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+.student-wizard-wrapper {
+    width: 100%;
+    padding: 25px 0 35px;
+}
+
+/* Main wizard card */
+.student-wizard {
+    width: 82%;
+    max-width: 1150px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    padding: 28px 32px 30px;
+}
+
+/* ================================
+   WIZARD STEPS
+================================ */
+
+.student-wizard .wizard-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 32px;
+}
+
+.student-wizard .wizard-step {
+    text-align: center;
+    min-width: 80px;
+}
+
+.student-wizard .step-number {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #dce1e6;
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #495057;
+    background: #fff;
+}
+
+.student-wizard .wizard-step.active .step-number {
+    background: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+.student-wizard .step-title {
+    font-size: 15px;
+    color: #495057;
+}
+
+.student-wizard .wizard-step.active .step-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* Connecting line */
+.student-wizard .step-line {
+    height: 2px;
+    flex: 1;
+    background: #dce1e6;
+    margin: 0 14px 28px;
+}
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.student-wizard .wizard-section {
+    border: 1px solid #d9dee3;
+    padding: 22px;
+    background: #fff;
+}
+
+/* Section heading */
+.student-wizard .section-title {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #172b4d;
+}
+
+.student-wizard .section-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 22px;
+}
+
+/* Divider */
+.student-wizard .section-divider {
+    border: 0;
+    border-top: 1px solid #e1e5e8;
+    margin: 0 0 22px;
+}
+
+/* ================================
+   FORM FIELDS
+================================ */
+
+.student-wizard .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 18px;
+}
+
+.student-wizard .form-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #172b4d;
+    margin-bottom: 7px;
+}
+
+.student-wizard .form-control,
+.student-wizard .form-select {
+    height: 44px;
+    border: 1px solid #d8dee4;
+    border-radius: 6px;
+    padding: 8px 13px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.student-wizard .form-control:focus,
+.student-wizard .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+/* File input */
+.student-wizard input[type="file"] {
+    height: 44px;
+    padding: 7px 10px;
+}
+
+/* Small helper text */
+.student-wizard .form-text {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #6c757d;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.student-wizard .wizard-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 25px;
+    padding-top: 18px;
+
+    border-top: 1px solid #dee2e6;
+}
+
+.student-wizard .wizard-actions .btn {
+    min-width: 115px;
+    height: 48px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1200px) {
+    .student-wizard {
+        width: 88%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .student-wizard-wrapper {
+        padding: 15px 10px;
+    }
+
+    .student-wizard {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .student-wizard .wizard-section {
+        padding: 16px;
+    }
+
+    .student-wizard .wizard-steps {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .student-wizard .step-title {
+        font-size: 12px;
+    }
+
+    .student-wizard .step-line {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+

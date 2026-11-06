@@ -1,0 +1,410 @@
+/* =========================================
+   ACADEMY SYSTEM - CUSTOM THEME
+========================================= */
+
+:root {
+    --academy-sidebar: #263849;
+    --academy-sidebar-hover: #344b60;
+    --academy-primary: #2c8580;
+    --academy-primary-dark: #246f6b;
+    --academy-background: #f3f6f8;
+    --academy-text: #344054;
+    --academy-border: #e6ebef;
+}
+
+/* Main Background */
+body {
+    background: var(--academy-background);
+    color: var(--academy-text);
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.academy-sidebar {
+    background: var(--academy-sidebar) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.academy-sidebar .sidebar-brand {
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    background: var(--academy-sidebar);
+}
+
+.academy-sidebar .brand-link {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0 18px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.academy-brand-image {
+    width: 39px;
+    height: 39px;
+    object-fit: contain;
+    margin: 0;
+    opacity: 1 !important;
+}
+
+.academy-sidebar .brand-text {
+    color: #f4f7fa;
+    font-size: 19px;
+    font-weight: 600 !important;
+    letter-spacing: 0.1px;
+}
+
+/* Sidebar Label */
+.academy-sidebar-label {
+    color: #91a4b6;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 23px 22px 10px;
+}
+
+/* Sidebar Links */
+.academy-sidebar .sidebar-menu {
+    padding: 0 12px;
+}
+
+.academy-sidebar .nav-item {
+    margin-bottom: 5px;
+}
+
+.academy-sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    border-radius: 8px;
+    padding: 10px 13px;
+    color: #c3ced8;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.academy-sidebar .nav-link .nav-icon {
+    font-size: 17px;
+    width: 25px;
+    margin-right: 9px;
+    color: #a9bac9;
+}
+
+.academy-sidebar .nav-link:hover {
+    color: #ffffff;
+    background: var(--academy-sidebar-hover);
+}
+
+.academy-sidebar .nav-link:hover .nav-icon {
+    color: #ffffff;
+}
+
+/* Active Link */
+.academy-sidebar .nav-link.active {
+    color: #ffffff !important;
+    background: var(--academy-primary) !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.academy-sidebar .nav-link.active .nav-icon {
+    color: #ffffff !important;
+}
+
+/* Dropdown Arrow */
+.academy-sidebar .nav-arrow {
+    color: #a9bac9;
+    font-size: 12px;
+}
+
+/* Submenu */
+.academy-sidebar .nav-treeview {
+    padding: 5px 0 5px 12px;
+}
+
+.academy-sidebar .nav-treeview .nav-link {
+    min-height: 38px;
+    font-size: 13.5px;
+    padding: 8px 12px;
+}
+
+.academy-sidebar .nav-treeview .nav-icon {
+    font-size: 9px;
+    width: 22px;
+    margin-right: 7px;
+}
+
+.academy-sidebar .nav-treeview .nav-link.active {
+    background: rgba(44, 133, 128, 0.22) !important;
+    color: #ffffff !important;
+    box-shadow: none;
+}
+
+/* Sidebar Bottom */
+.academy-sidebar-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px 18px;
+    color: #91a4b6;
+    font-size: 11px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--academy-sidebar);
+}
+
+.academy-sidebar-footer i {
+    color: #65b9ae;
+    font-size: 15px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.academy-header {
+    min-height: 72px;
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--academy-border);
+    box-shadow: 0 2px 8px rgba(30, 45, 60, 0.035);
+    padding: 0 12px;
+}
+
+.academy-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    color: #536475;
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+
+.academy-toggle:hover {
+    background: #f1f5f7;
+    color: var(--academy-primary);
+}
+
+/* User Menu */
+.academy-user-link {
+    display: flex;
+    align-items: center;
+    color: #344054 !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px !important;
+    border-radius: 8px;
+}
+
+.academy-user-link:hover {
+    background: #f5f7f9;
+}
+
+.academy-user-link .user-image {
+    width: 39px;
+    height: 39px;
+    object-fit: contain;
+    padding: 3px;
+    background: #ffffff;
+    border: 1px solid var(--academy-border);
+    margin-right: 10px;
+}
+
+.academy-dropdown-icon {
+    font-size: 10px;
+    color: #8492a0;
+}
+
+/* User Dropdown */
+.academy-user-dropdown {
+    margin-top: 10px !important;
+    border: 1px solid var(--academy-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(30, 45, 60, 0.12);
+}
+
+.academy-user-header {
+    background: var(--academy-sidebar) !important;
+    padding: 22px 10px !important;
+}
+
+.academy-user-header img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    padding: 5px;
+    background: #ffffff;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.academy-user-header p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.academy-user-header p small {
+    color: #bdcbd6;
+    font-size: 12px;
+}
+
+.academy-user-dropdown .user-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px;
+    background: #ffffff;
+}
+
+.academy-user-status {
+    color: #687888;
+    font-size: 11px;
+}
+
+.academy-user-status i {
+    color: #2caa79;
+    font-size: 8px;
+    margin-right: 4px;
+}
+
+.academy-logout-btn {
+    color: #c44d4d;
+    background: #fff2f2;
+    border: 1px solid #f5dada;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 11px;
+}
+
+.academy-logout-btn:hover {
+    color: #ffffff;
+    background: #c44d4d;
+}
+
+/* =========================================
+   CONTENT AREA
+========================================= */
+
+.app-main {
+    background: var(--academy-background);
+}
+
+.app-content-header {
+    padding-top: 22px;
+    padding-bottom: 10px;
+}
+
+.app-content-header h1 {
+    color: #263849;
+    font-weight: 600;
+}
+
+.app-content {
+    padding-bottom: 25px;
+}
+
+/* Common Cards */
+.app-main .card {
+    border: 1px solid var(--academy-border);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(30, 45, 60, 0.045);
+    overflow: hidden;
+}
+
+.app-main .card-header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--academy-border);
+    padding: 15px 18px;
+}
+
+.app-main .card-title {
+    color: #344054;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.app-main .card-body {
+    background: #ffffff;
+}
+
+/* Buttons */
+.app-main .btn-primary {
+    background: var(--academy-primary);
+    border-color: var(--academy-primary);
+}
+
+.app-main .btn-primary:hover {
+    background: var(--academy-primary-dark);
+    border-color: var(--academy-primary-dark);
+}
+
+/* Tables */
+.app-main .table thead th {
+    color: #526273;
+    background: #f7f9fa;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--academy-border);
+}
+
+.app-main .table td {
+    color: #465465;
+    font-size: 13.5px;
+    vertical-align: middle;
+}
+
+/* Footer */
+.app-footer {
+    background: #ffffff;
+    border-top: 1px solid var(--academy-border);
+    color: #718096;
+    font-size: 12px;
+    padding: 15px 20px;
+}
+
+.app-footer strong {
+    font-weight: 500;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .academy-sidebar .brand-text {
+        font-size: 17px;
+    }
+
+    .academy-header {
+        min-height: 62px;
+    }
+
+    .academy-user-link {
+        padding: 6px !important;
+    }
+
+    .academy-user-link .user-image {
+        width: 34px;
+        height: 34px;
+    }
+
+    .app-content-header {
+        padding-top: 16px;
+    }
+
+    .academy-sidebar-footer {
+        font-size: 10px;
+    }
+}
